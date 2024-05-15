@@ -1,8 +1,8 @@
 def adicionar_item(carrinho, precos):
     print("BEM VINDO AO CONTROLE DE ESTOQUE!")
     while True:
-        item = input("Qual produto você deseja adicionar ao estoque? (ou digite 'sair' para fechar): ").lower()
-        if item == 'sair':
+        item = input("Qual produto você deseja adicionar ao estoque? (ou digite 'sair' para fechar): ").upper()
+        if item == 'SAIR':
             break
         quantidade = int(input("Quantos produtos?: "))
         if quantidade in carrinho:
